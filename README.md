@@ -11,3 +11,16 @@ python FreshDeskTicketDB.py --days 30                         # Latest X days
 python FreshDeskTicketDB.py --ticket 12345                    # Specific ticket number
 python FreshDeskTicketDB.py --force                           # re-download already saved tickets
 python FreshDeskTicketDB.py --output MyDB/                    # custom folder
+
+[FreshDeskTicketSearch.py](FreshDeskTicketSearch.py) A simple tool to search the downloaded ticket database (specially usefull since freshdesk online search is really bad). 
+
+python FreshDeskTicketSearch.py --customer "John Smith"              # Search by customer ("from")
+python FreshDeskTicketSearch.py --subject "email alert"              # Search but ticket subject
+python FreshDeskTicketSearch.py --search "smtp timeout"              # Global text search, this will show results from subject, and content
+python FreshDeskTicketSearch.py --version 6.1                        # Search by Version
+python FreshDeskTicketSearch.py --status resolved                    # Status: Open, Close, Resolved, etc
+python FreshDeskTicketSearch.py --month 2024-01                      # Specific month
+python FreshDeskTicketSearch.py --from 2024-01-01 --to 2024-03-31    # Date range
+python FreshDeskTicketSearch.py --ticket 12345                       # Ticket number
+python FreshDeskTicketSearch.py --customer "Acme" --search "agent"   # AND logic
+python FreshDeskTicketSearch.py --search "syslog" --show-full        # full file

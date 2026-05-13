@@ -3,7 +3,7 @@ Collection of tools written in Python
 
 [FreshDeskTicketDB.py](FreshDeskTicketDB.py) A simple but working tool to download all your FreshDesk tickets so you have a local backup. Edit the file to add the domain (normally companyname.freshdesk.com), agents (useful when your API does not have admin access, knowing the agent names will convert "user123456" into agents), leave it blank if you have admin right. And of course, the API Key  
 
-```text
+```python
 python FreshDeskTicketDB.py --month 2024-01                    # Download one month  
 python FreshDeskTicketDB.py --month 2024-01 --month 2024-02   # multiple months  
 python FreshDeskTicketDB.py --year 2024                       # ALl year (Note: does not work adding more than one year)  
